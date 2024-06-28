@@ -1,0 +1,9 @@
+toml==0.10.2
+toolz==0.12.1
+loguru==0.7.2
+pydantic==2.7.1
+pandas==1.5.3
+plotly==5.22.0
+plotly-resampler==0.10.0
+kaleido==0.2.1
+msgpack==1.0.8

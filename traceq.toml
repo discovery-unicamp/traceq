@@ -1,0 +1,21 @@
+# This is a sample configuration file for TraceQ
+
+output_dir = "./"
+
+[logger]
+enabled_transports = "console"
+level = "info"
+
+[profiler]
+session_id = "" # By default, it will be a random UUID if not provided
+enabled_metrics = "memory_usage,time"
+sign_traces = "false"
+depth = "3"
+precision = "2"
+
+[profiler.memory_usage]
+enabled_backends = "psutil,resource,tracemalloc,mprof,kernel"
+
+[analyzer]
+unit = "mb"
+sessions = ""
